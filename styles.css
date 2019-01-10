@@ -17,3 +17,29 @@ td{
     padding:5px;
     color: white
 }
+
+thead button{
+    padding: 15px;
+    background: black;
+    color: white;
+    box-shadow: #333;
+}
+
+#modal{
+    padding: 15px;
+    background-color: lightpink;
+    text-align: center;
+    font-weight: bold;
+
+
+}
+
+#modal2{
+    padding: 15px;
+    background-color: lightpink;
+}
+
+#modal2Form{
+    display: inline-flex;
+    flex-direction: column;
+}

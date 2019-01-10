@@ -22,6 +22,7 @@
             <th>id</th>
             <th>title</th>
             <th>completed</th>
+            <th><button class="trigger2" >Add User</button></th>
           </tr>
         </thead>
         <tbody>
@@ -37,6 +38,33 @@
 
     <div id="modal"  data-iziModal-icon="icon-home" > 
         User {{user.id}} successfully deleted!
+    </div> 
+
+    <div id="modal2"  data-iziModal-icon="icon-home" > 
+        <form id="modal2Form">
+            <fieldset>
+              <legend>Add new user</legend>
+
+              <div>
+                  <input ng-model="usertitle" type="text" name="title" id="title" placeholder="Enter Name"/>
+                  <label for="raza_1">title</label>
+              </div>
+ 
+              
+              <div>
+                <input ng-model="userbody" type="text" name="body" id="body" placeholder="Enter Text"/>
+                <label for="raza_2">body</label>
+              </div>
+
+             <div>
+                <input ng-model="userid" type="text" name="userId" id="userId" placeholder="Enter ID"/>
+                <label for="raza_3">userId</label>
+             </div>
+
+             <input type="submit" data-izimodal-close="" value="Save" ng-click="addUser()">
+                          
+            </fieldset>
+          </form>
     </div>     
 <script src="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/js/iziModal.js"></script>
 <script src="modal.js"></script>
