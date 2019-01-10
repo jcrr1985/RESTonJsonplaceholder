@@ -1,0 +1,19 @@
+tr:nth-child(even) {
+    background: #00338D;
+
+}
+tr:nth-child(odd) {
+    background: #BC204B;
+}
+
+thead tr{
+    background:greenyellow!important;
+    color: black!important;
+    font-weight: bold!important;
+    border-color: black;
+}
+
+td{
+    padding:5px;
+    color: white
+}
